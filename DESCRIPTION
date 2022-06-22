@@ -1,10 +1,10 @@
 Package: attention
-Title: What the Package Does (One Line, Title Case)
+Title: Self-Attention Algorithm
 Version: 0.0.0.9000
 Authors@R: 
     person("Bastiaan", "Quast", , "bquast@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2951-3577"))
-Description: What the package does (one paragraph).
+Description: This package implements functions for the Self-Attention algorithm, and demostrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
