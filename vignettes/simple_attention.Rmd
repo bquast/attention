@@ -94,18 +94,9 @@ We now calculate the maximum value for each row and preserve the structure (i.e.
 maxs = RowMax(scores)
 ```
 
-The weights matrix will be populated using a `for loop` (see `help('for')`). Since the loop does not edit the dimensions of the matrix, we generate a zero matrix (i.e. a values are set to `0`) beforehand, which we then populate using the `for loop`.
+We now generate the weights
 ```
-# initialize weights matrix
-weights = matrix(0, nrow=4, ncol=4)
-```
-
-We now populate the `weights` matrix using the `for loop`.
-```
-# computing the weights by a softmax operation
-for (i in 1:dim(scores)[1]) {
-  weights[i,] = SoftMax((scores[i,]-maxs[i,]) / ncol(K) ^ 0.5)
-}
+weights = ComputeWeights(scores)
 ```
 
 Finally, we compute the attention as a weighted sum of the value vectors.
