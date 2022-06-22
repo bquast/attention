@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Bastiaan", "Quast", , "bquast@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2951-3577"))
-Description: This package implements functions for the Self-Attention algorithm, and demostrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
+Description: Implements functions for the Self-Attention algorithm, and demonstrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
