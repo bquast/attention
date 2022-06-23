@@ -6,6 +6,7 @@
 [![Coverage status](https://codecov.io/gh/bquast/attention/branch/master/graph/badge.svg?token=bsdqgGdJNu)](https://app.codecov.io/gh/bquast/attention)
 [![Total RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/grand-total/attention?color=brightgreen)](https://cran.r-project.org/package=attention)
 [![RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/attention?color=brightgreen)](https://cran.r-project.org/package=attention)
+[![Codecov test coverage](https://codecov.io/gh/bquast/attention/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bquast/attention?branch=main)
 <!-- badges: end -->
 
 Implements functions for the Self-Attention algorithm, and demonstrates with vignettes of increasing depth how to construct the Self-Attention algorithm.

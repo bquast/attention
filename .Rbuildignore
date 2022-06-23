@@ -6,3 +6,4 @@
 ^Meta$
 ^\.github$
 ^CRAN-SUBMISSION$
+^codecov\.yml$
