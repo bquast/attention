@@ -8,4 +8,4 @@
 [![RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/attention?color=brightgreen)](https://cran.r-project.org/package=attention)
 <!-- badges: end -->
 
-R package that implements a basic attention algorithm.
+Implements functions for the Self-Attention algorithm, and demonstrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
