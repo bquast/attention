@@ -86,3 +86,6 @@ Now we can view the results using:
 ```{r}
 print(attention)
 ```
+
+After working through this, have a look at the [Complete Self-Attention from Scratch](complete_attention.html) vignette.
+
