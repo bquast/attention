@@ -50,7 +50,7 @@ W_K = matrix(floor(runif(9, min=0, max=3)),nrow=3,ncol=3)
 W_V = matrix(floor(runif(9, min=0, max=3)),nrow=3,ncol=3)
 ```
 
-Next, we generate the Queries (`Q`), Keys (`K`), and Values (`V`). The `%*%` operator performs the matrix multiplication. You can view the R help page using `help('%*%')` (or the online [An Introductino to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Multiplication)).
+Next, we generate the Queries (`Q`), Keys (`K`), and Values (`V`). The `%*%` operator performs the matrix multiplication. You can view the R help page using `help('%*%')` (or the online [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Multiplication)).
 ```
 # generating the queries, keys and values
 Q = words %*% W_Q
