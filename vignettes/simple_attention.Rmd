@@ -58,7 +58,7 @@ K = words %*% W_K
 V = words %*% W_V
 ```
 
-Following this, we score the Queries (`Q`) against the Key (`K`) vectors.
+Following this, we score the Queries (`Q`) against the Key (`K`) vectors (which are transposed for the multiplation using `t()`, see `help('t')` for more info).
 ```
 # scoring the query vectors against all key vectors
 scores = Q %*% t(K)
@@ -71,7 +71,7 @@ weights = ComputeWeights(scores)
 
 Let's have a look at the `weights` matrix.
 ```
-print(weightss)
+print(weights)
 ```
 
 Finally, we compute the `attention` as a weighted sum of the value vectors (which are combined in the matrix `V`).
