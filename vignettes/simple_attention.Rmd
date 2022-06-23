@@ -18,11 +18,6 @@ This vignette describes how to implement the [attention mechanism](https://en.m.
 
 The code is translated from the [Python](https://www.python.org/) original by [Stefania Cristina](https://scholar.google.com/citations?user=ncHZ0mwAAAAJ&hl=en) ([University of Malta](https://www.um.edu.mt/profile/stefaniacristina)) in her post [The Attention Mechanism from Scratch](https://machinelearningmastery.com/the-attention-mechanism-from-scratch/)
 
-We need to load the package.
-```{r setup}
-library(attention)
-```
-
 We begin by generating encoder representations of four different words.
 
 ```
