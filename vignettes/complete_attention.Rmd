@@ -14,7 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-
 This vignette describes how to implement the [attention mechanism](https://en.m.wikipedia.org/wiki/Attention_(machine_learning)) - which forms the basis of [transformers](https://en.m.wikipedia.org/wiki/Transformer_(machine_learning_model)) - in the [R language](https://en.m.wikipedia.org/wiki/R_(programming_language)).
 
 It follows the same steps as the [Simple Self-Attention from Scratch](), but does not rely on any of the helper functions defined in the `attention` package, rather it implements everything in `base` `R`.
@@ -68,10 +67,10 @@ scores = Q %*% t(K)
 print(scores)
 ```
 
-We now calculate the maximum value for each row and preserve the structure (i.e. the 4 rows, now with only one column which contains the maximum value for the corresponding row).
+We now calculate the maximum value for each row and preserve the structure (i.e. the `4` rows, now with only one column which contains the maximum value for the corresponding row).
 ```{r}
 # calculate the max for each row of the scores matrix
-maxs = as.matrix(apply(scores, MARGIN=1, max))
+maxs = as.matrix(apply(scores, margin=1, max))
 print(maxs)
 ```
 
