@@ -1,8 +1,8 @@
 ---
-title: "Simple Attention"
+title: "Simple Self-Attention from Scratch"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Simple Attention}
+  %\VignetteIndexEntry{Simple Self-Attention from Scratch}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
