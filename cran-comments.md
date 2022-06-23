@@ -15,8 +15,8 @@
 
 # R CMD check
    
-── R CMD check results ──────────────────────────────────────────────────────────────────────── attention 0.0.0.9000 ────
-Duration: 14s
+── R CMD check results ───────────────────────────────────────────────────────────────────────────── attention 0.1.0 ────
+Duration: 14.5s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
