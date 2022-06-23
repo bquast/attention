@@ -70,7 +70,7 @@ print(scores)
 We now calculate the maximum value for each row and preserve the structure (i.e. the `4` rows, now with only one column which contains the maximum value for the corresponding row).
 ```{r}
 # calculate the max for each row of the scores matrix
-maxs = as.matrix(apply(scores, margin=1, max))
+maxs = as.matrix(apply(scores, MARGIN=1, FUN=max))
 print(maxs)
 ```
 
