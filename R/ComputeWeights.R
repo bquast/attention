@@ -1,11 +1,12 @@
 #' @name ComputeWeights
 #' @title SoftMax sigmoid function
 #' @param scores input value (numeric)
+#' @param K Key values matrix (numeric)
 #' @return output value (numeric)
 #' @export
 #'
 
-ComputeWeights <- function(scores) {
+ComputeWeights <- function(scores, K) {
   size = dim(scores)[1]
   weights = matrix(0, nrow=4, ncol=4)
   for (i in 1:size) {
