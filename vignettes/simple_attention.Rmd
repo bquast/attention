@@ -66,12 +66,20 @@ scores = Q %*% t(K)
 
 We now generate the `weights` matrix.
 ```
-weights = ComputeWeights(scores)
+weights = ComputeWeights(scores, K)
 ```
 
 Let's have a look at the `weights` matrix.
 ```
 print(weights)
+```
+
+```
+            [,1]        [,2]      [,3]        [,4]
+[1,] 0.083717538 0.026383741 0.8429010 0.046997679
+[2,] 0.025449248 0.080752324 0.8130461 0.080752324
+[3,] 0.003072728 0.003072728 0.9883811 0.005473487
+[4,] 0.273384789 0.086157735 0.4869837 0.153473823
 ```
 
 Finally, we compute the `attention` as a weighted sum of the value vectors (which are combined in the matrix `V`).
@@ -85,7 +93,6 @@ Now we can view the results using:
 print(attention)
 ```
 
-This gives:
 ```
          [,1]     [,2]        [,3]
 [1,] 2.816517 1.900235 0.046997679
