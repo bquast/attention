@@ -1,5 +1,29 @@
-## R CMD check results
+# Test environments
 
-0 errors | 0 warnings | 1 note
+- local Windows 10 install, R 4.2.0
+- local Linux (Arch) install, R 4.2.0
+- local MacOS install, R 4.2.0
+- GitHub Actions
+   - Windows Server, R release
+   - MacOS, R release
+   - MacOS, R dev
+   - Ubuntu, R release
+- win-builder
+   - devel
+   - release
 
-* This is a new release.
+
+# R CMD check
+   
+── R CMD check results ──────────────────────────────────────────────────────────────────────── attention 0.0.0.9000 ────
+Duration: 14s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+
+R CMD check succeeded
+
+
+# win-builder
+
+* DONE
+Status: OK
