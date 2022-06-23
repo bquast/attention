@@ -19,7 +19,6 @@ This vignette describes how to implement the [attention mechanism](https://en.m.
 The code is translated from the [Python](https://www.python.org/) original by [Stefania Cristina](https://scholar.google.com/citations?user=ncHZ0mwAAAAJ&hl=en) ([University of Malta](https://www.um.edu.mt/profile/stefaniacristina)) in her post [The Attention Mechanism from Scratch](https://machinelearningmastery.com/the-attention-mechanism-from-scratch/)
 
 We begin by generating encoder representations of four different words.
-
 ```
 # encoder representations of four different words
 word_1 = matrix(c(1,0,0), nrow=1)
@@ -28,7 +27,7 @@ word_3 = matrix(c(1,1,0), nrow=1)
 word_4 = matrix(c(0,0,1), nrow=1)
 ```
 
-Next, we stack the word embeddings into a single array (in this case a matrix).
+Next, we stack the word embeddings into a single array (in this case a matrix) which we call `words`.
 ```
 # stacking the word embeddings into a single array
 words = rbind(word_1,
@@ -37,16 +36,21 @@ words = rbind(word_1,
               word_4)
 ```
 
-Next, we generate random integers on the domain [0,3].
+Let's see what this looks like.
 ```
-# generating the weight matrices
+print(words)
+```
+
+Next, we generate random integers on the domain `[0,3]`.
+```
+# initializing the weight matrices (with random values)
 set.seed(0)
 W_Q = matrix(floor(runif(9, min=0, max=3)),nrow=3,ncol=3)
 W_K = matrix(floor(runif(9, min=0, max=3)),nrow=3,ncol=3)
 W_V = matrix(floor(runif(9, min=0, max=3)),nrow=3,ncol=3)
 ```
 
-Next, we generate the Queries (Q), Keys (K), and Values (V). The `%*%` operator performs the matrix multiplication. You can view the R help page using `help('%*%')`
+Next, we generate the Queries (`Q`), Keys (`K`), and Values (`V`). The `%*%` operator performs the matrix multiplication. You can view the R help page using `help('%*%')` (or the online [An Introductino to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Multiplication)).
 ```
 # generating the queries, keys and values
 Q = words %*% W_Q
@@ -54,18 +58,23 @@ K = words %*% W_K
 V = words %*% W_V
 ```
 
-Following this, we score the Queries (Q) against the Key (K) vectors.
+Following this, we score the Queries (`Q`) against the Key (`K`) vectors.
 ```
 # scoring the query vectors against all key vectors
 scores = Q %*% t(K)
 ```
 
-We now generate the weights
+We now generate the `weights` matrix.
 ```
 weights = ComputeWeights(scores)
 ```
 
-Finally, we compute the attention as a weighted sum of the value vectors.
+Let's have a look at the `weights` matrix.
+```
+print(weightss)
+```
+
+Finally, we compute the `attention` as a weighted sum of the value vectors (which are combined in the matrix `V`).
 ```
 # computing the attention by a weighted sum of the value vectors
 attention = weights %*% V
