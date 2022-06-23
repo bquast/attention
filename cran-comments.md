@@ -23,7 +23,12 @@ Duration: 14s
 R CMD check succeeded
 
 
-# win-builder
+# win-builder (release + dev)
 
 * DONE
-Status: OK
+Status: 1 NOTE
+
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: 'Bastiaan Quast <bquast@gmail.com>'
+
+New submission
