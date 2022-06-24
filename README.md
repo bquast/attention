@@ -8,7 +8,7 @@
 [![RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/attention?color=brightgreen)](https://cran.r-project.org/package=attention)
 <!-- badges: end -->
 
-Implements functions for the Self-Attention algorithm, and demonstrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
+Self-Attention algorithm helper functions and demonstration vignettes of increasing depth on how to construct the Self-Attention algorithm.
 
 The **development** version, to be used **at your peril**, can be installed from [GitHub](https://github.com/bquast/attention) using the [remotes](https://cran.r-project.org/package=remotes) package.
 
