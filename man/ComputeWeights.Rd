@@ -4,12 +4,10 @@
 \alias{ComputeWeights}
 \title{SoftMax sigmoid function}
 \usage{
-ComputeWeights(scores, K)
+ComputeWeights(scores)
 }
 \arguments{
 \item{scores}{input value (numeric)}
-
-\item{K}{Key values matrix (numeric)}
 }
 \value{
 output value (numeric)
