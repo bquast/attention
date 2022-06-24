@@ -9,3 +9,21 @@
 <!-- badges: end -->
 
 Implements functions for the Self-Attention algorithm, and demonstrates with vignettes of increasing depth how to construct the Self-Attention algorithm.
+
+The **development** version, to be used **at your peril**, can be installed from [GitHub](https://github.com/bquast/attention) using the [remotes](https://cran.r-project.org/package=remotes) package.
+
+```r
+if (!require('remotes')) install.packages('remotes')
+remotes::install_github('bquast/attention')
+```
+
+Development
+-------------
+Development takes place on the GitHub page.
+
+<https://github.com/bquast/attention>
+
+Bugs can be filed on the issues page on GitHub.
+
+<https://github.com/bquast/attention/issues>
+
