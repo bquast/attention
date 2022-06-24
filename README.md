@@ -10,6 +10,13 @@
 
 Self-Attention algorithm helper functions and demonstration vignettes of increasing depth on how to construct the Self-Attention algorithm.
 
+## CRAN install
+The package can be installed from [CRAN](ttps://cran.r-project.org/package=remotes) using:
+```r
+install.packages('attention')
+```
+
+## Preview version
 The **development** version, to be used **at your peril**, can be installed from [GitHub](https://github.com/bquast/attention) using the [remotes](https://cran.r-project.org/package=remotes) package.
 
 ```r
@@ -17,8 +24,7 @@ if (!require('remotes')) install.packages('remotes')
 remotes::install_github('bquast/attention')
 ```
 
-Development
--------------
+## Development
 Development takes place on the GitHub page.
 
 <https://github.com/bquast/attention>
