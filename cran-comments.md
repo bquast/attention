@@ -16,11 +16,9 @@
 # R CMD check
    
 ── R CMD check results ───────────────────────────────────────────────────────────────────────────── attention 0.1.0 ────
-Duration: 18.1s
+Duration: 23.3s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
-
-R CMD check succeeded
 
 
 # win-builder (release + dev)
