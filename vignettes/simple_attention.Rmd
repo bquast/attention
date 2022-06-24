@@ -68,7 +68,7 @@ print(scores)
 
 We now generate the `weights` matrix.
 ```{r}
-weights = ComputeWeights(scores, K)
+weights = ComputeWeights(scores)
 ```
 
 Let's have a look at the `weights` matrix.
