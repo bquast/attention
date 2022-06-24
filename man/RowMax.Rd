@@ -29,6 +29,8 @@ print(M)
 # [2,]    0    2    2
 # [3,]    1    0    1
 
+# apply RowMax() to the matrix M, reformat output as matrix again
+# to keep the maxs on their corresponding rows
 as.matrix( RowMax(M) )
 
 # this outputs
