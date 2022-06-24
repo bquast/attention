@@ -31,7 +31,7 @@ print(M)
 
 # apply RowMax() to the matrix M, reformat output as matrix again
 # to keep the maxs on their corresponding rows
-as.matrix( RowMax(M) )
+RowMax(M)
 
 # this outputs
 #      [,1]
