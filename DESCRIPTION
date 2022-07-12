@@ -4,7 +4,7 @@ Version: 0.1.0.9000
 Authors@R: 
     person("Bastiaan", "Quast", , "bquast@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2951-3577"))
-Description: Self-Attention algorithm helper functions and demonstration vignettes of increasing depth on how to construct the Self-Attention algorithm, this is based on Dan Jurafsky and James H. Martin (2022, ISBN:978-0131873216) <https://web.stanford.edu/~jurafsky/slp3/> "Speech and Language Processing (3rd ed.)" and Alex Graves (2020) <https://www.youtube.com/watch?v=AIiwuClvH6k> "Attention and Memory in Deep Learning".
+Description: Self-Attention algorithm helper functions and demonstration vignettes of increasing depth on how to construct the Self-Attention algorithm, this is based on Vaswani et al. (2017) <https://doi.org/10.48550/arXiv.1706.03762>, Dan Jurafsky and James H. Martin (2022, ISBN:978-0131873216) <https://web.stanford.edu/~jurafsky/slp3/> "Speech and Language Processing (3rd ed.)" and Alex Graves (2020) <https://www.youtube.com/watch?v=AIiwuClvH6k> "Attention and Memory in Deep Learning".
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
