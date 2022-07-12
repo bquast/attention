@@ -15,8 +15,8 @@
 
 # R CMD check
    
-── R CMD check results ───────────────────────────────────────────────────────────────────────────── attention 0.1.0 ────
-Duration: 23.3s
+── R CMD check results ───────────────────────────────────────────────────────────────────────────── attention 0.2.0 ────
+Duration: 24.1s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
@@ -24,9 +24,4 @@ Duration: 23.3s
 # win-builder (release + dev)
 
 * DONE
-Status: 1 NOTE
 
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Bastiaan Quast <bquast@gmail.com>'
-
-New submission
