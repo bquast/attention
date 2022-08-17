@@ -4,10 +4,12 @@
 \alias{SoftMax}
 \title{SoftMax sigmoid function}
 \usage{
-SoftMax(x)
+SoftMax(x, lambda = 2)
 }
 \arguments{
 \item{x}{input value (numeric)}
+
+\item{lambda}{scaling parameter (numeric)}
 }
 \value{
 output value (numeric)

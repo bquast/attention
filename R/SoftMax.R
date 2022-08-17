@@ -1,6 +1,7 @@
 #' @name SoftMax
 #' @title SoftMax sigmoid function
 #' @param x input value (numeric)
+#' @param lambda scaling parameter (numeric)
 #' @return output value (numeric)
 #' @export
 #' @examples
@@ -21,5 +22,5 @@
 #' # 0.229511038 0.004203641 0.229511038 0.229511038 0.031060941
 #'
 
-SoftMax <- function(x)
-  exp(x)/sum(exp(x))
+SoftMax <- function(x, lambda=2)
+  (x-mean(x, na.rm=TRUE)) / ( lambda * (stats::sd(x, na.rm=TRUE)/(2*pi)) )
