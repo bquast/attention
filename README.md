@@ -11,7 +11,7 @@
 Self-Attention algorithm helper functions and demonstration vignettes of increasing depth on how to construct the Self-Attention algorithm.
 
 ## CRAN install
-The package can be installed from [CRAN](https://cran.r-project.org/package=remotes) using:
+The package can be installed from [CRAN](https://cran.r-project.org/) using:
 ```r
 install.packages('attention')
 ```
