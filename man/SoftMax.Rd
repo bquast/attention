@@ -4,12 +4,10 @@
 \alias{SoftMax}
 \title{SoftMax sigmoid function}
 \usage{
-SoftMax(x, lambda = 2)
+SoftMax(x)
 }
 \arguments{
 \item{x}{input value (numeric)}
-
-\item{lambda}{scaling parameter (numeric)}
 }
 \value{
 output value (numeric)
@@ -18,7 +16,7 @@ output value (numeric)
 SoftMax sigmoid function
 }
 \examples{
-# create a vector of integers (as works for non-integers)
+# create a vector of integers (also works for non-integers)
 set.seed(0)
 V = c(floor(runif(9, min=-3, max=3)))
 print(V)

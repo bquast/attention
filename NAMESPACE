@@ -3,3 +3,4 @@
 export(ComputeWeights)
 export(RowMax)
 export(SoftMax)
+export(attention)
